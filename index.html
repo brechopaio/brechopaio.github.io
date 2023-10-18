@@ -2,7 +2,7 @@
 <html lang="pt-BR" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Loja Paió Brechó">
     <meta name="description" content="produtos de qualidade e custo baixo">
     <meta name="author" content="Eduardo Fernandes Bueno (Eddie Ferb)">
@@ -24,6 +24,16 @@
     </style>
   </head> 
   <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : 'your-app-id',
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <header>
       <div class="content">
         <div id="branding">
@@ -40,34 +50,41 @@
         </nav>
       </div>
     </header>
-    <div>
-      <aside style="float: right; width: 120px;">
-        <a href="https://web.whatsapp.com/send?phone=5515996440365" target="_blank">
-          <img src="/Applications/XAMPP/xamppfiles/htdocs/loja_paio_brecho/img/whatsapp_icon.jpg" alt="WhatsApp" style="width: 100%; vertical-align: middle;">
-        </a>
-      </aside>
-    </div>
     <section id="showcase">
+      <aside>
+        <a href="https://web.whatsapp.com/send?phone=5515996440365" target="_blank">
+          <img src="/img/whats.svg" alt="WhatsApp" >
+        </a>
+        <a href="https://www.instagram.com/paio_brecho_/" target="_blank">
+          <img src="/img/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/paiobrecho" target="_blank">
+          <img src="/img/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://www.youtube.com/@paiobrecho1448/featured" target="_blank">
+          <img src="/img/podcast.svg" alt="Podcast" />
+        </a>   
+      </aside>
       <div class="container">
         <h1>Loja Paió Brechó</h1> 
         <p>
-          Paió Brechó é uma loja com muita tradição na nossa região, oferecendo produtos de excelente qualidade para quem tem classe, personalidade e bom gosto.
+        Paió Brechó é uma loja com muita tradição na nossa região, oferecendo produtos <br> de excelente qualidade para quem tem classe, personalidade e bom gosto.<br>
+        Participe das Lives para ficar por dentro das novidades
         </p>
+        <h3>
+          Sigam nas redes sociais
+        </h3>
       </div>
-    </section>
-    <section id="newsletter">
-      <div class="container">
-        <h1>PARA RECEBER NOVIDADES</h1>
-        <form>
-          <input type="email" placeholder="coloque seu melhor e-mail aqui">
-          <button type="submit" name="botao_1" style="cursor: pointer;">CONFIRMAR INSCRIÇÃO</button>
-        </form>
-      </div>
-    </section>
+
+      </section>
+    <center>
+    <img src="tes.jpg" class="d-block w-100" alt="Fachada da loja com manequins expostos">
+    </center>
+    
     <section id="foto_box">
       <div class="container">
-        <h2>Loja Paió Brechó S.A.</h2>
-        <p>Rua Nove de Julho, 207 | Centro | Capão Bonito | SP | 18300-050</p>
+        <h2>Loja Paió Brechó MEI</h2>
+        <p>Rua Nove de Julho, 207 | Centro | Capão Bonito | SP | CEP 18300-050</p>
       </div>
       <div>
       </div>

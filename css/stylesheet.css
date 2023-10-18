@@ -29,6 +29,31 @@ ul{
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+aside img:hover{
+  scale: 1.3;  
+}
+
+aside img{
+width: 30px;
+height: 30px;
+}
+
+ #showcase aside {
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    right: 20px;
+    gap: 60px;
+ }
+
+ .d-block w-100 {
+  position: center;
+ }
+
+
   /* Header **/
   /* COR DO HEADER - LILÁS / AZULADO #635B95 */ 
 header{
@@ -83,6 +108,161 @@ header a: hover{
 #showcase p{
   font-size: 20px;
 }
+
+/* Carrossel */
+ .foto-produtos {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  margin: 0 ;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 800px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 800px;
+  margin-top: -250px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #FFF;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .05s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+#radio5:checked ~ .first{
+  margin-left: -100%;
+}
+#radio6:checked ~ .first{
+  margin-left: -125%;
+}
+#radio7:checked ~ .first{
+  margin-left: -150%;
+}
+#radio8:checked ~ .first{
+  margin-left: -175%;
+}
+#radio9:checked ~ .first{
+  margin-left: -200%;
+}
+
+.navigation-auto div{
+  border: 2px solid#20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 550px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color: #fff;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+  background-color: #fff;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+  background-color: #fff;
+}
+#radio7:checked ~ .navigation-auto .auto-btn7{
+  background-color: #fff;
+}
+#radio8:checked ~ .navigation-auto .auto-btn8{
+  background-color: #fff;
+}
+#radio9:checked ~ .navigation-auto .auto-btn9{
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* newsletter */
   /* COR DO HEADER - LILÁS / ROSEADO #A993B9 */ 
 #newsletter{
@@ -121,7 +301,7 @@ aside#sidebar{
   width: 30%;
   margin-top: 10px;
 }
-aside#sidebar .quote input, aside#sidebar .quote textarea{
+aside #sidebar .quote input, aside#sidebar .quote textarea{
   width: 90%;
   padding: 5%;
 }
@@ -147,6 +327,15 @@ footer{
   text-align: center;
 }
 /* Media Queries */
+@media(max-width: 990px){
+  #showcase aside{
+    position: absolute;
+    height: 80px;
+    flex-direction: row;
+    left: 315px;
+    top: 440px;
+}
+}
 @media(max-width: 768px){
   header #branding,
   header nav,
@@ -175,5 +364,3 @@ footer{
       margin-bottom: 5px;
     }
   }
-
-}
