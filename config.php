@@ -1,23 +1,23 @@
 <?php
 
-$dbHost = 'localhost';
-$dbUsername = 'root';
-$dbPassword = 'paio1234';
-$dbName = 'formulario-paio';
-$dbPort = 3307;
+// Informações de conexão ao banco de dados no Azure
+$dbServer = 'http://software-design-paio.azurewebsites.net/';
+$dbUsername = 'seuusuario@seuservidor';
+$dbPassword = 'suasenha';
+$dbName = 'nomedoseubanco';
 
+$connectionOptions = array(
+    'Database' => $dbName,
+    'Uid' => $dbUsername,
+    'PWD' => $dbPassword
+);
 
-$conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName, $dbPort);
+// Tentativa de conexão
+$conexao = sqlsrv_connect($dbServer, $connectionOptions);
 
-if ($conexao->connect_errno)
-{
-    echo "Erro";
-}
-else
-{
+if (!$conexao) {
+    die(print_r(sqlsrv_errors(), true));
+} else {
     echo "Conexão efetuada com sucesso";
 }
-
 ?>
-
-
