@@ -1,0 +1,22 @@
+{
+    "name": "software-design-paio",
+    "version": "1.0.0",
+    "description": "Projeto PI 2 da Univesp",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "mysql2": "^2.2.5",
+      "php": "^1.0.0",
+      // Adicione outras dependências do seu projeto aqui
+    },
+    "devDependencies": {
+      // Dependências específicas para desenvolvimento (por exemplo, testes)
+    },
+    "keywords": ["projeto", "web", "node.js", "php", "mysql", "azure"],
+    "author": "Seu Nome",
+    "license": "ISC"
+  }
+  
