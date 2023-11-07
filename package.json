@@ -1,7 +1,7 @@
 {
-  "name": "seu-projeto",
+  "name": "software-design-paio",
   "version": "1.0.0",
-  "description": "Descrição do seu projeto",
+  "description": "PI 2 Univesp - 2º semestre 2023",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -14,6 +14,6 @@
   "devDependencies": {
   },
   "keywords": ["projeto", "web", "node.js", "php", "mysql", "azure"],
-  "author": "Seu Nome",
+  "author": "Eduardo Ferandes Bueno",
   "license": "ISC"
 }
