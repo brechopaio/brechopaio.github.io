@@ -1,7 +1,8 @@
 <?php
 
 
-if (isset($_POST['submit'])) {
+if(isset($_POST['submit']))
+{
 
     // print_r('Nome: ' . $_POST['nome']);
     // print_r('<br>')
@@ -42,24 +43,23 @@ if (isset($_POST['submit'])) {
 
 
     $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nasc,cidade,estado,endereco) VALUES ('$nome','$email','$telefone','$sexo','$data_nasc','$cidade','$estado','$endereco')");
+
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Cadastro de Clientes | GN</title>
     <style>
-        body {
+        body{
             font-family: Arial, Helvetica, sans-serif;
             background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
         }
-
-        .box {
+        .box{
             color: white;
             position: absolute;
             top: 50%;
@@ -69,24 +69,20 @@ if (isset($_POST['submit'])) {
             padding: 15px;
             border-radius: 15px;
         }
-
-        fieldset {
+        fieldset{
             border: 3px solid dodgerblue;
         }
-
-        legend {
+        legend{
             border: 1px solid dodgerblue;
             padding: 10px;
             text-align: center;
             background-color: dodgerblue;
             border-radius: 8px;
         }
-
-        .inputBox {
+        .inputBox{
             position: relative;
         }
-
-        .inputUser {
+        .inputUser{
             background: none;
             border: none;
             border-bottom: 1px solid white;
@@ -98,7 +94,6 @@ if (isset($_POST['submit'])) {
         }
     </style>
 </head>
-
 <body>
     <div class="box">
         <form action="formulario.php" method="POST">
@@ -123,7 +118,7 @@ if (isset($_POST['submit'])) {
                 <input type="radio" id="feminino" name="genero" value="feminino" required>
                 <label for="feminino">Feminino</label>
                 <input type="radio" id="masculino" name="genero" value="masculino" required>
-                <label for="masculino">Masculino</label>
+                <label for="masculino">Masculino</label>   
                 <input type="radio" id="outro" name="genero" value="outro" required>
                 <label for="outro">Outro</label>
                 <div class="inputBox">
@@ -151,5 +146,4 @@ if (isset($_POST['submit'])) {
         </form>
     </div>
 </body>
-
 </html>
