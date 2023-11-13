@@ -1,6 +1,6 @@
 <?php
 
-$dbHost = 'banco-dados-cadastro-clientes.mysql.database.azure.com';
+$dbHost = 'software-design-paio-pi2.scm.azurewebsites.net';
 $dbUsername = 'brechopaio';
 $dbPassword = 'Edu1234.';
 $dbName = 'formulario-paio';
