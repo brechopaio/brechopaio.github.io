@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUERO VENDER</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+  </head>
+  <body>
+    <header>
+      <div class="content">
+    <div id="branding">
+      <h1><span class="highliht">Loja Paió</span> Brechó</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">INÍCIO<a></li>
+        <li class="current"><a href="quero_vender.html">QUERO VENDER<a></li>
+      </ul>
+    </nav>
+      </div>
+    </header>
+    <div>
+    <h1 id="logado"></h1>
+
+    <button onclick="sair()">Sair</button>
+  </div>
+  <section class="anuncio">
+    <div>
+    <h1>Crie seu anúncio</h1>
+        <form id="anunciarForm">
+            <label for="produto">Produto:</label>
+            <input type="text" id="produto" name="produto" required>
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea>
+            <method="POST" action="/add_product" enctype="multipart/form-data"> 
+            <label for="imagem_produto">Imagem do produto:</label>
+            <input type="file" id="imagem_produto" name="imagem_produto">
+            <button type="submit">Anunciar</button>
+        </form>
+      </div>
+      </section>
+   
+    <script src="./env/assets/js/quero_vender.js"></script>
+    
+  </body>
+
+
+  <footer>
+    <h3>2023 © Loja Paió Brechó</h3>
+  </footer>
+</html>
+
+
+
+

@@ -251,16 +251,38 @@ header a: hover{
 }
 
 
+/*Anúncios*/
+.anuncio div {
+  font-family: Arial, sans-serif;
+  margin: 160px 160px;
+}
 
+.anuncio form {
+  margin-top: 20px;
+}
 
+.anuncio input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
 
+.anuncio button {
+  background-color:  #A993B9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
 
+.anuncio button:hover {
+  opacity: 0.5;
+}
 
-
-
-
-
-
+/*Fim Anúncios*/
 
 
 /* newsletter */
@@ -333,6 +355,15 @@ footer{
     height: 80px;
     flex-direction: row;
     left: 315px;
+    top: 440px;
+}
+}
+@media(max-width: 828px){
+  #showcase aside{
+    position: absolute;
+    height: 80px;
+    flex-direction: row;
+    left: 260px;
     top: 440px;
 }
 }
