@@ -1,10 +1,10 @@
 <?php
 
 $dbHost = 'banco-dados-cadastro-clientes.mysql.database.azure.com';
-$dbUsername = 'brechopaio@banco-dados-cadastro-clientes';
+$dbUsername = 'brechopaio';
 $dbPassword = 'Edu1234.';
 $dbName = 'formulario-paio';
-$dbPort = 3307;
+$dbPort = 3306;
 
 $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName, $dbPort);
 
