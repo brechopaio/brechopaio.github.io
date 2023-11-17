@@ -6,7 +6,7 @@ $dbPassword = 'Edu1234.';
 $dbName = 'banco-dados-cadastro-clientes';
 $dbPort = 3306;
 
-$conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName, $dbPort);
+$conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName,$dbPort);
 
 if ($conexao->connect_errno) {
     echo "Erro na conexão: " . $conexao->connect_error;
