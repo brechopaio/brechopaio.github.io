@@ -4,7 +4,6 @@ $dbHost = 'banco-dados-cadastro-clientes.mysql.database.azure.com';
 $dbUsername = 'brechopaio';
 $dbPassword = 'Edu1234.';
 $dbName = 'banco-dados-cadastro-clientes';
-$dbPort = 3306;
 
 $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName,$dbPort);
 
