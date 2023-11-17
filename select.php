@@ -2,7 +2,7 @@
 
 include_once('config.php');
 
-$query = "SELECT * FROM usuarios";
+$query = "SELECT * FROM clientes";
 $result = mysqli_query($conexao, $query);
 
 if (mysqli_num_rows($result) > 0) {
