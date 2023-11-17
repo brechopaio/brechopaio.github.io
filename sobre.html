@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Engenheiro Mecânico Especialista">
@@ -9,52 +8,53 @@
     <meta name="author" content="Eduardo Fernandes Bueno (Eddie Ferb)">
     <title>Loja Paió Brechó | Sobre</title>
     <link rel="stylesheet" href="css/stylesheet.css">
-    <!-- Inclua o script da API do Azure Maps -->
-    <script type="text/javascript" src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
-</head>
+  </head>
+  <body>
+<header>
+  <div class="content">
+<div id="branding">
+  <h1><span class="highliht">Loja Paió</span> Brechó</h1>
+</div>
+<nav>
+  <ul>
+    <li><a href="index.html">INÍCIO<a/></li>
+    <li class="current"><a href="sobre.html">SOBRE<a/></li>
+    <li><a href="produtos.html">PRODUTOS<a/></li>
+    <li><a href="tela_de_login.html">ÁREA DO USUÁRIO<a/></li> 
+    </ul>
+</nav>
+  </div>
+</header>
 
-<body>
-    <header>
-        <!-- Seu cabeçalho aqui -->
-    </header>
 
-    <section id="main">
-        <div class="container">
-            <article id="main-col">
-                <h1 class="page-title">PAIO BRECHÓ ROUPAS E BRINQUEDOS</h1>
-                <h4 class="container">
-                    <!-- Seu conteúdo aqui -->
-                </h4>
-            </article>
-        </div>
-    </section>
+<section id="main">
+  <div class="container">
+  <article id="main-col">
+    <h1 class="page-title">PAIO BRECHÓ ROUPAS E BRINQUEDOS</h1>
+        <H4 class="container">
+<p>Há mais de 20 anos a nossa loja é o melhor lugar para comprar roupa de qualidade! Aqui você tem estoque sempre atualizado, com todos os tamanhos e cores para você escolher à vontade. Se precisa de roupa, você precisa vir aqui!</p>
+      <p>Para os clientes que estão procurando uma loja de roupas boas e baratas, aqui é o melhor lugar! Temos variedade de cores e tecidos, sempre seguindo a moda da estação. Para melhorar, estamos com ofertas imperdíveis que vão te ajudar a dar aquela atualizada no guarda-roupa. Venha aproveitar!</p>
 
-    <!-- Div para o mapa -->
-    <div id="map" style="height: 400px;"></div>
+<p>Pensando em moda sustentável nossa loja é uma boa opção, pois vestir-se de brechó é despir-se de preconceitos. </p>
+<p>O brechó é muito além de um consumo consciente que promove mudanças significativas para o meio ambiente, pois ele nos possibilita ressignificar a forma como lidamos com o todo. </p>
+<p>O consumo consciente é sobre estar a favor da vida, a liberdade de ser e respeitando a singularidade de cada um. O Paió Brechó une tudo isso!</p>
+</H4>
+    </div>
+</section>
 
-    <script>
-        // Chave da API do Azure Maps
-        var azureMapsKey = '<yQWArQ19F7PiMdW3cyT5VKwAJlzVSoxNRrv78pLSNmY>';
+<section id="foto_box">
 
-        // Configurações do mapa
-        var map = new atlas.Map('map', {
-            center: [-122.33, 47.60], // Coordenadas de exemplo (Seattle)
-            zoom: 12,
-            view: 'Auto',
-            authOptions: {
-                authType: 'subscriptionKey',
-                subscriptionKey: azureMapsKey
-            }
-        });
-    </script>
-
-    <section id="foto_box">
-        <!-- Seção foto_box -->
-    </section>
-
-    <footer>
-        <!-- Seu rodapé aqui -->
-    </footer>
-</body>
+  
+<footer>
+  <section id="foto_box">
+    <div class="container">
+      <h2>Loja Paió Brechó MEI</h2>
+      <p>Rua Nove de Julho, 207 | Centro | Capão Bonito | SP | CEP 18300-050</p>
+    </div>
+    <div>
+    </div>
+  </section>
+  <h3>2023 © Loja Paió Brechó</h3>
+</footer>
 
 </html>
