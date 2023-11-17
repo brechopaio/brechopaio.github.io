@@ -1,6 +1,6 @@
 <?php
 
-$azureMapsKey = '<yQWArQ19F7PiMdW3cyT5VKwAJlzVSoxNRrv78pLSNmY>';
+$azureMapsKey = 'yQWArQ19F7PiMdW3cyT5VKwAJlzVSoxNRrv78pLSNmY';
 
 ?>
 
