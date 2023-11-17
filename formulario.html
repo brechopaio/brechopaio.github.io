@@ -12,7 +12,7 @@ if(isset($_POST['submit']))
     $estado = $_POST['estado'];
     $endereco = $_POST['endereco'];
 
-    $query = "INSERT INTO `formulario-loja-paio-brecho` (nome, email, telefone, sexo, data_nasc, cidade, estado, endereco) VALUES ('$nome', '$email', '$telefone', '$sexo', '$data_nasc', '$cidade', '$estado', '$endereco')";
+    $query = "INSERT INTO `banco-dados-cadastro-clientes` (nome, email, telefone, sexo, data_nasc, cidade, estado, endereco) VALUES ('$nome', '$email', '$telefone', '$sexo', '$data_nasc', '$cidade', '$estado', '$endereco')";
     
     $result = mysqli_query($conexao, $query);
 
@@ -73,7 +73,7 @@ if(isset($_POST['submit']))
 </head>
 <body>
     <div class="box">
-        <form action="formulario.php" method="POST">
+        <form action="banco-dados-cadastro-clientes.php" method="POST">
             <fieldset>
                 <legend><b>Formulário Cadastro de Clientes</b></legend>
                 <br>
