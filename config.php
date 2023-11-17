@@ -13,8 +13,5 @@ if ($conexao->connect_errno) {
 } else {
     echo "Conexão efetuada com sucesso";
 }
-if ($conexao->connect_error) {
-    die("Erro de conexão: " . $conexao->connect_error);
-}
 
 ?>
