@@ -1,4 +1,14 @@
 <?php
+// Inclua o arquivo config.php
+include('https://brechopaio.azurewebsites.net/config.php');
+
+// Restante do código do formulario.php
+?>
+
+
+
+
+<?php
 
 
 if(isset($_POST['submit']))
